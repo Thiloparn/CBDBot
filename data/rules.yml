@@ -1,0 +1,18 @@
+version: "2.0"
+
+rules:
+
+- rule: Despedirse cuando el usuario se despide
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- rule: Es skynet cuando el preguntan
+  steps:
+  - intent: quien
+  - action: utter_quien
+
+- rule: Se enfada cuando le insultan
+  steps:
+  - intent: insulto
+  - action: utter_insulto

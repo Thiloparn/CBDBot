@@ -1,0 +1,23 @@
+version: "2.0"
+stories:
+- story: camino feliz 2 (.\tests\test_stories.yml)
+  steps:
+  - intent: saludos
+  - action: utter_saludos
+  - intent: feliz  # predicted: insulto: estoy perfecto
+  - action: utter_feliz
+  - intent: despedida
+  - action: utter_despedida
+- story: camino triste 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: saludos
+  - action: utter_saludos
+  - intent: triste  # predicted: feliz: muy triste
+  - action: utter_animar
+  - action: utter_estas_mejor
+  - intent: affirmacion  # predicted: saludos: yep
+  - action: utter_feliz
+- story: quien (.\tests\test_stories.yml)
+  steps:
+  - intent: quien
+  - action: utter_skynet  # predicted: utter_quien

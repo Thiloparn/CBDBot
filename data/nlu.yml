@@ -1,0 +1,89 @@
+version: "2.0"
+nlu:
+- intent: saludos
+  examples: |
+    - hola
+    - hey
+    - buenas
+    - saludos
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+    - waza
+    - holiwi
+    - holita
+- intent: despedida
+  examples: |
+    - adios
+    - me voy
+    - hasta luego
+    - nos vemos
+    - ciao
+    - bye
+    - me voy a tomar fanta
+    - nos vemos!
+- intent: affirmacion
+  examples: |
+    - si
+    - effectivamente
+    - ya ves
+    - yeah
+    - sip
+    - correcto
+    - desde luego
+    - esta claro
+    - okey
+- intent: negacion
+  examples: |
+    - no
+    - nop
+    - para nada
+    - ni de broma
+    - no del todo bien
+    - la verdad es que no
+- intent: feliz
+  examples: |
+    - feliz
+    - bien
+    - genial
+    - perfecto
+    - increible
+    - apoteosico
+    - de maravilla
+    - me siento estupendamente
+    - brutal
+- intent: triste
+  examples: |
+    - mal
+    - fatal
+    - horrible
+    - triste
+    - soy un desgraciado
+    - voy a llorar
+    - no me siento bien
+    - vivimos en una sociedad
+    - suffriendo
+    - aun no voy flying
+    - no del todo bien
+- intent: quien
+  examples: |
+    - quien eres ?
+    - eres un humano ?
+    - con quien estoy hablando?
+    - como te llamas ?
+    - estas vivo ?
+    - con quien ecoñostoy hablando ?
+    - eres un bot
+    - no tienes emociones?
+- intent: insulto
+  examples: |
+    - eres tonto
+    - funcionas fatal
+    - estas roto
+    - vaya bot de mierda
+- intent: estado
+  examples: |
+    - como estas ?
+    - como te encuentras ?
+    - estas bien?
+    - como te sientes?

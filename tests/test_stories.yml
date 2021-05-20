@@ -1,0 +1,82 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: camino feliz 1
+  steps:
+  - user: |
+      Hola
+    intent: saludos
+  - action: utter_saludos
+  - user: |
+      genial
+    intent: feliz
+  - action: utter_feliz
+
+- story: camino feliz 2
+  steps:
+  - user: |
+      Hey!
+    intent: saludos
+  - action: utter_saludos
+  - user: |
+      estoy perfecto
+    intent: feliz
+  - action: utter_feliz
+  - user: |
+      bye-bye!
+    intent: despedida
+  - action: utter_despedida
+
+- story: camino triste 1
+  steps:
+  - user: |
+      wazaaaa
+    intent: saludos
+  - action: utter_saludos
+  - user: |
+      muy triste
+    intent: triste
+  - action: utter_animar
+  - action: utter_estas_mejor
+  - user: |
+      yep
+    intent: affirmacion
+  - action: utter_feliz
+
+- story: camino triste 2
+  steps:
+  - user: |
+      buenas
+    intent: saludos
+  - action: utter_saludos
+  - user: |
+      voy a irme al parque a llorar
+    intent: triste
+  - action: utter_animar
+  - action: utter_estas_mejor
+  - user: |
+      la verdad es que no
+    intent: negacion
+  - action: utter_triste
+
+- story: despedida
+  steps:
+  - user: |
+      me largo
+    intent: despedida
+  - action: utter_despedida
+
+- story: quien
+  steps:
+  - user: |
+      con quien estoy hablando?
+    intent: quien
+  - action: utter_skynet
+
+- story: insulto
+  steps:
+  - user: |
+      eres imbecil
+    intent: insulto
+  - action: utter_insulto

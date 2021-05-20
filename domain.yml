@@ -1,0 +1,44 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- quien
+- saludos
+- estado
+- despedida
+- triste
+- negacion
+- stop
+- affirmacion
+- feliz
+- insulto
+responses:
+  utter_saludos:
+  - text: ¡Hey! ¿Que tal estas?
+  utter_despedida:
+  - text: ¡Nos vemos!
+  utter_animar:
+  - text: 'A ver si esto te ayuda:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_estas_mejor:
+  - text: Estas mejor?
+  utter_feliz:
+  - text: Genial! Me alegro!
+  utter_triste:
+  - text: Pues que mal
+  utter_quien:
+  - text: Mi nombre es SkyNet, un bot que no piensa para nada dominar el mundo
+  utter_insulto:
+  - text: ¡Jo! Lo siento :(
+  utter_estado:
+  - text: No tengo emociones, pero yo diría que bastante bien.
+actions:
+- utter_animar
+- utter_despedida
+- utter_estado
+- utter_estas_mejor
+- utter_feliz
+- utter_quien
+- utter_saludos
+- utter_triste

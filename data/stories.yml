@@ -1,0 +1,82 @@
+version: "2.0"
+
+stories:
+
+- story: camino feliz
+  steps:
+  - intent: saludos
+  - action: utter_saludos
+  - intent: feliz
+  - action: utter_feliz
+
+- story: camino triste 1
+  steps:
+  - intent: saludos
+  - action: utter_saludos
+  - intent: triste
+  - action: utter_animar
+  - action: utter_estas_mejor
+  - intent: affirmacion
+  - action: utter_feliz
+
+- story: camino triste 2
+  steps:
+  - intent: saludos
+  - action: utter_saludos
+  - intent: triste
+  - action: utter_animar
+  - action: utter_estas_mejor
+  - intent: negacion
+  - action: utter_triste
+
+- story: interactive_story_1
+  steps:
+  - intent: saludos
+  - action: utter_saludos
+  - intent: triste
+  - action: utter_animar
+  - action: utter_estas_mejor
+  - intent: triste
+  - action: utter_animar
+  - action: utter_estas_mejor
+  - intent: quien
+  - action: utter_quien
+  - intent: despedida
+  - action: utter_despedida
+
+- story: interactive_story_2
+  steps:
+  - intent: saludos
+  - action: utter_saludos
+  - intent: feliz
+  - action: utter_feliz
+  - intent: estado
+  - action: utter_estado
+
+- story: interactive_story_3
+  steps:
+  - intent: estado
+  - action: utter_estado
+
+- story: interactive_story_4
+  steps:
+  - intent: saludos
+  - action: utter_saludos
+  - intent: triste
+  - action: utter_animar
+  - action: utter_estas_mejor
+  - intent: negacion
+  - action: utter_triste
+  - intent: estado
+  - action: utter_estado
+  - intent: despedida
+  - action: utter_despedida
+
+- story: interactive_story_5
+  steps:
+  - intent: saludos
+  - action: utter_saludos
+  - intent: estado
+  - action: utter_estado
+  - intent: quien
+  - action: utter_quien

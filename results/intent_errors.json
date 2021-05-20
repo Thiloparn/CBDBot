@@ -1,0 +1,10 @@
+[
+  {
+    "text": "no del todo bien",
+    "intent": "triste",
+    "intent_prediction": {
+      "name": "negacion",
+      "confidence": 0.3539521396160126
+    }
+  }
+]
